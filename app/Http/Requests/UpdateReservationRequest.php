@@ -23,7 +23,7 @@ class UpdateReservationRequest extends FormRequest
     {
         return [
             'start_time' => 'required|date|after_or_equal:now',
-            'estimated_duration_minutes' => 'required|integer|min:10',
+            'estimated_duration_minutes' => 'required|integer|min:5',
         ];
     }
 
