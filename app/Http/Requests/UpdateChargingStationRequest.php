@@ -29,7 +29,7 @@ class UpdateChargingStationRequest extends FormRequest
             'longitude' => 'required|numeric|between:-180,180',
             'address' => 'required|string|max:255',
             'status' => 'required|in:available,occupied,maintenance,offline',
-            'price_per_kwh' => 'nullable|numeric|min:0',
+            'price_per_kwh' => 'nullable|numeric|min:1',
         ];
     }
 
