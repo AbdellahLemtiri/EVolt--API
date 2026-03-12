@@ -29,6 +29,7 @@ class ReservationController extends Controller
         $data['user_id'] = 1;
         $reservation = Reservation::create($data);
         return response()->json($reservation, 201);
+        
     }
 
     /**
