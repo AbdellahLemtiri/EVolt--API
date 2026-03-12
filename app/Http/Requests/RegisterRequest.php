@@ -36,7 +36,6 @@ class RegisterRequest extends FormRequest
             'email.required' => 'L\'email est requis',
             'password.required' => 'Le mot de passe est requis',
             'password_confirmation.required' => 'La confirmation du mot de passe est requise',
-            'role.required' => 'Le rôle est requis',
-        ];
+         ];
     }
 }
