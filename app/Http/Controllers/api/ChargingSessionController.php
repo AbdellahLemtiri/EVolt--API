@@ -30,6 +30,7 @@ class ChargingSessionController extends Controller
      */
     public function store(StoreChargingSessionRequest $request)
     {
+        
         $data = $request->validated();
         //
         $reservation = Reservation::where('id', $data['reservation_id'])
