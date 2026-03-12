@@ -28,7 +28,7 @@ class StoreChargingStationRequest extends FormRequest
             'power_kw' => 'required|numeric|min:0',
             'latitude' => 'required|numeric|between:-90,90',
             'longitude' => 'required|numeric|between:-180,180',
-            'address' => 'required|string|max:255',
+            'address' => 'required|string|max:200',
             'status' => 'required|in:available,occupied,maintenance,offline',
             'price_per_kwh' => 'nullable|numeric|min:0',
             'connector_type_id' => 'required|exists:connector_types,id',
