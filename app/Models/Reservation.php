@@ -16,6 +16,7 @@ class Reservation extends Model
         'start_time',
         'estimated_duration_minutes',
         'status'
+        
     ];
 
     public function user()
