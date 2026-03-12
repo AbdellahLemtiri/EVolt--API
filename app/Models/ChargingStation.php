@@ -20,12 +20,14 @@ class ChargingStation extends Model
     ];
 
 
-    public function reservations()
-    {
-        return $this->hasMany(Reservation::class);
-    }
+
+
     public function connectorType()
     {
         return $this->belongsTo(ConnectorType::class);
+    }
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
     }
 }
