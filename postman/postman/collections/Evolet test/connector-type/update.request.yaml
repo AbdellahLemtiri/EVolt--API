@@ -1,0 +1,15 @@
+$kind: http-request
+name: update
+url: http://127.0.0.1:8000/api/connector-types/4
+method: PUT
+headers:
+  Authorization: "{{token}}"
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \      \"name\": \"maddhzhgdqka\"\r
+
+    }"
+order: 2998330983079002

@@ -1,0 +1,9 @@
+$kind: collection
+name: stations
+auth:
+  - id: a12ccaad-4753-43d2-9686-af6024a6f3aa
+    type: bearer
+    name: Bearer Token
+    credentials:
+      token: 7|aDOXyOJ7aAY9iW5wMlCHejQjuvAK8OtCfZhBRRxsb7f51c31
+order: 1435924705574911

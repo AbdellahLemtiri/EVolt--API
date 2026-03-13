@@ -1,0 +1,17 @@
+$kind: http-request
+name: update
+url: http://127.0.0.1:8000/api/reservations/1
+method: PUT
+headers:
+  Authorization: "{{token}}"
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \      \"start_time\": \"30\",\r
+
+    \      \"estimated_duration_minutes\": \"2026-03-12 22:10:10\"\r
+
+    }"
+order: 4312918291425080

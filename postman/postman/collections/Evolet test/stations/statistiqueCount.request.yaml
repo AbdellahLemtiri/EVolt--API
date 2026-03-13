@@ -1,0 +1,10 @@
+$kind: http-request
+name: statistiqueCount
+url: http://127.0.0.1:8000/api/stations/stats
+method: GET
+headers:
+  Authorization: "{{token}}"
+body:
+  type: json
+  content: ""
+order: 4484797226614546

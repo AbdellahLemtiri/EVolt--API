@@ -24,17 +24,14 @@ class UpdateConnectorTypeRequest extends FormRequest
     {
         return [
             //
-            'connector_type_id' => 'required|exists:connector_types,id',
-            'name' => 'required|string|max:255|unique:connector_types,name,'
+            'name' => 'required|string|max:255|unique:connector_types,name'
         ];
     }
 
     public function messages()
     {
         return [
-            'connector_type_id.required' => 'Le champ connector_type_id est requis.',
-            'connector_type_id.exists' => 'Le type de connecteur spécifié n\'existe pas.',
-            'name.required' => 'Le nom du type de connecteur est requis.',
+             'name.required' => 'Le nom du type de connecteur est requis.',
             'name.unique' => 'Ce nom de type de connecteur existe déjà.',
         ];
     }

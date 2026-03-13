@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/connector-types/2
+method: PUT
+headers:
+  Authorization: "{{token}}"
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \      \"name\": \"mardddka\"\r
+
+    }"
+order: 4459259963451919

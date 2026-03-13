@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\api\ChargingStationController;
 use App\Http\Controllers\api\ReservationController;
 use App\Http\Controllers\api\AuthController;
 use App\Http\Controllers\api\ChargingSessionController;
 use App\Http\Controllers\api\ConnectorTypeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\api\ChargingStationController;
 
 
 
@@ -29,11 +29,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/sessions/{chargingSession}', [ChargingSessionController::class, 'update']);
     Route::delete('/sessions/{chargingSession}', [ChargingSessionController::class, 'destroy']);
 
-    Route::middleware('can:admin-only')->group(function () {
-        Route::post('/stations', [ChargingStationController::class, 'store']);
-        Route::put('/stations/{chargingStation}', [ChargingStationController::class, 'update']);
-        Route::get('/stations/stats', [ChargingStationController::class, 'getStats']);
-        Route::delete('/stations/{chargingStation}', [ChargingStationController::class, 'destroy']);
-        Route::apiResource('connector-types', ConnectorTypeController::class);
-    });
+    Route::post('/stations', [ChargingStationController::class, 'store']);
+    Route::put('/stations/{chargingStation}', [ChargingStationController::class, 'update']);
+    Route::get('/stations/stats', [ChargingStationController::class, 'getStats']);
+     Route::delete('/stations/{chargingStation}', [ChargingStationController::class, 'destroy']);
+    Route::apiResource('connector-types', ConnectorTypeController::class);
 });

@@ -12,7 +12,7 @@ class UpdateChargingStationRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return  Gate::allows('admin-only');
+        return  true;
     }
 
     /**

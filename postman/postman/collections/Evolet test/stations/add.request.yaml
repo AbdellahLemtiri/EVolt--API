@@ -1,0 +1,31 @@
+$kind: http-request
+name: add
+url: http://127.0.0.1:8000/api/stations
+method: POST
+headers:
+  Authorization: "{{token}}"
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"shel\",\r
+
+    \    \"power_kw\": 120,\r
+
+    \    \"latitude\": 12003,\r
+
+    \    \"longitude\": 39494,\r
+
+    \    \"address\": \"16 safi safi \",\r
+
+    \    \"status\": \"available\",\r
+
+    \    \"price_per_kwh\": 12,\r
+
+    \    \"connector_type_id\": 2\r
+
+    }"
+auth:
+  type: noauth
+order: 2778960413203619

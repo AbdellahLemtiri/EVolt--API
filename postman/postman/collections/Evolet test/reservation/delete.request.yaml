@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/connector-types/1
+method: DELETE
+headers:
+  Accept: application/json
+  Authorization: "{{token}}"
+order: 2962175832189596

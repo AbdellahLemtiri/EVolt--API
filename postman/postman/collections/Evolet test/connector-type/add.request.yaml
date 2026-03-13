@@ -1,0 +1,12 @@
+$kind: http-request
+name: add
+url: http://127.0.0.1:8000/api/connector-types
+method: POST
+headers:
+  Authorization: "{{token}}"
+body:
+  type: json
+  content: "{\r\n    \"name\": \"USB\"\r\n}"
+auth:
+  type: noauth
+order: 1773404405203

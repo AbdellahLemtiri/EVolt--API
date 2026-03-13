@@ -1,0 +1,8 @@
+$kind: http-request
+name: index
+url: http://127.0.0.1:8000/api/stations
+method: GET
+headers:
+  Accept: application/json
+  Authorization: "{{token}}"
+order: 4484457287336635

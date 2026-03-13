@@ -1,0 +1,7 @@
+$kind: http-request
+name: show
+url: http://127.0.0.1:8000/api/reservations/1
+method: GET
+headers:
+  Authorization: "{{token}}"
+order: 3978744799733520

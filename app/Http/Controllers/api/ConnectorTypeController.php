@@ -45,11 +45,11 @@ class ConnectorTypeController extends Controller
      */
     public function update(UpdateConnectorTypeRequest $request, ConnectorType $connectorType)
     {
-        $data = $request->validated();
+       $data = $request->validated();
         $connectorType->update($data);
-        return response()->json([
-            'message' => 'updated successfully'
-        ], 200);
+       return response()->json([
+           'message' => 'updated successfully'
+       ]);
     }
 
     /**
